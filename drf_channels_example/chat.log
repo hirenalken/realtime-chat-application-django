@@ -1,0 +1,297 @@
+2016-09-24 14:09:43,274 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 14:10:43,177 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 14:11:28,015 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 14:21:59,592 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 14:22:41,021 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 14:22:49,820 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 14:23:24,371 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 14:47:19,489 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 14:48:04,089 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 14:53:13,621 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 14:55:22,113 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 14:55:38,107 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 14:56:52,411 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 14:58:16,053 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 15:52:48,948 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 16:08:39,138 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 16:17:46,401 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 16:24:06,566 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 16:44:41,623 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 16:45:56,757 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 16:50:52,839 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 17:14:00,652 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 17:19:16,130 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 17:21:05,986 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 17:23:00,755 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 17:47:16,848 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 18:39:59,294 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 18:53:17,796 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 19:01:35,950 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 19:01:56,831 ERROR Internal Server Error: /channel_app/users/2/message/3/
+Traceback (most recent call last):
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/channels/handler.py", line 227, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/channel_app/views.py", line 67, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 191, in save
+    self.instance = self.create(validated_data)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 846, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 833, in save_base
+    update_fields=update_fields, raw=raw, using=using)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/dispatch/dispatcher.py", line 191, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/channel_app/signals.py", line 12, in send_message
+    Group(instance.room.label).send({'text': data})
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/channels/channel.py", line 72, in send
+    self.channel_layer.send_group(self.name, content)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/asgi_redis/core.py", line 236, in send_group
+    assert self.valid_group_name(group), "Group name not valid"
+AssertionError: Group name not valid
+2016-09-24 19:03:41,403 INFO Using busy-loop synchronous mode on channel layer
+2016-09-24 19:03:49,609 ERROR Internal Server Error: /channel_app/users/2/message/3/
+Traceback (most recent call last):
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/channels/handler.py", line 227, in process_exception_by_middleware
+    return super(AsgiHandler, self).process_exception_by_middleware(exception, request)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/channel_app/views.py", line 67, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 191, in save
+    self.instance = self.create(validated_data)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 846, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 833, in save_base
+    update_fields=update_fields, raw=raw, using=using)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/django/dispatch/dispatcher.py", line 191, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/channel_app/signals.py", line 13, in send_message
+    Group(instance.room.label).send({'text': data})
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/channels/channel.py", line 72, in send
+    self.channel_layer.send_group(self.name, content)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/asgi_redis/core.py", line 236, in send_group
+    assert self.valid_group_name(group), "Group name not valid"
+AssertionError: Group name not valid
+2016-09-24 19:10:08,851 INFO Using busy-loop synchronous mode on channel layer
+2016-09-27 04:40:32,314 INFO Using busy-loop synchronous mode on channel layer
+2016-09-27 04:55:25,590 INFO Using busy-loop synchronous mode on channel layer
+2016-09-27 04:57:50,016 INFO Using busy-loop synchronous mode on channel layer
+2016-09-27 11:12:44,399 WARNING Not Found: /
+2016-09-27 11:12:44,417 ERROR Traceback (most recent call last):
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/daphne/http_protocol.py", line 235, in serverResponse
+    "size": self.sentLength,
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/daphne/http_protocol.py", line 329, in log_action
+    self.action_logger(protocol, action, details)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/channels/management/commands/runserver.py", line 124, in log_action
+    sys.stderr.write(msg)
+IOError: [Errno 5] Input/output error
+
+2016-09-27 11:12:45,039 WARNING Not Found: /favicon.ico
+2016-09-27 11:12:45,069 ERROR Traceback (most recent call last):
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/daphne/http_protocol.py", line 235, in serverResponse
+    "size": self.sentLength,
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/daphne/http_protocol.py", line 329, in log_action
+    self.action_logger(protocol, action, details)
+  File "/home/hiren/aubergine/open_source/angular-django-chat/drf_channels_example/venv/local/lib/python2.7/site-packages/channels/management/commands/runserver.py", line 124, in log_action
+    sys.stderr.write(msg)
+IOError: [Errno 5] Input/output error
+
+2016-10-13 16:26:45,975 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 06:27:56,860 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 06:33:53,049 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 06:42:13,153 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 06:45:10,560 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 06:47:46,474 WARNING Not Found: /
+2016-10-15 06:47:47,116 WARNING Not Found: /favicon.ico
+2016-10-15 06:48:46,001 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 06:52:24,613 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 06:56:18,368 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 06:59:26,492 WARNING Not Found: /
+2016-10-15 06:59:27,017 WARNING Not Found: /favicon.ico
+2016-10-15 07:01:54,802 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 07:22:38,326 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 07:24:48,344 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 07:26:42,213 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 07:35:03,753 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 07:39:43,819 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 07:42:03,056 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 07:42:32,956 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:42:32,957 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:47:07,561 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:47:07,562 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:47:17,056 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:47:17,057 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:47:17,615 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:47:17,615 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:47:17,820 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:47:17,821 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:47:18,008 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:47:18,008 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:47:18,184 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:47:18,184 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:47:50,579 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:47:50,580 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:47:55,662 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:47:55,662 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:48:27,604 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 07:52:59,675 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 07:53:25,427 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:53:25,427 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:53:28,683 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:53:28,684 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:53:29,433 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:53:29,433 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:53:29,622 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:53:29,622 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:53:29,799 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:53:29,799 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:55:08,689 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:55:08,689 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:56:27,359 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 07:56:37,812 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:57:10,154 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:57:11,025 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:58:52,166 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 07:58:58,758 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:30,652 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:36,675 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:37,406 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:37,609 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:37,818 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:38,025 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:38,250 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:38,507 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:38,737 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:38,953 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:39,169 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:39,374 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:39,579 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:39,775 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:39,981 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:40,177 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:40,394 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:40,609 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:40,806 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:41,023 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:41,226 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:41,413 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 07:59:41,618 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:01:15,540 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:01:18,233 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:01:26,343 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:01:28,023 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:01:28,871 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:01:29,517 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:04:17,981 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:04:33,535 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:04:33,536 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:04:35,928 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:04:35,928 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:05:09,770 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:05:12,475 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:05:30,208 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:05:30,209 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:05:31,228 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:05:31,229 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:05:31,826 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:05:31,826 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:05:32,011 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:05:32,012 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:05:32,187 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:05:32,188 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:05:54,936 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:06:07,598 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:06:07,598 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:06:08,971 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:06:08,972 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:06:09,138 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:06:09,139 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:06:10,732 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:06:10,732 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:06:13,836 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:06:13,839 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:07:00,009 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:07:48,225 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:07:54,583 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:16:41,845 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:17:09,495 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:17:09,495 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:17:11,687 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:17:11,690 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:17:12,158 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:17:12,159 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:17:12,314 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:17:12,315 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:17:12,489 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:17:12,490 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:17:46,859 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:17:49,032 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:17:51,081 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:18:00,520 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:18:00,521 ERROR HTTP/WS send decode error: 'dict' object has no attribute 'encode'
+2016-10-15 08:19:02,513 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:19:51,309 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:20:09,248 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:20:18,947 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:20:21,495 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:21:39,127 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:22:51,587 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:27:14,256 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:28:08,230 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:52:36,330 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 08:52:48,245 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 09:00:49,274 WARNING Not Found: /channel_app/users/undefined/message/
+2016-10-15 09:01:18,274 WARNING Not Found: /channel_app/users/undefined/message/
+2016-10-15 09:01:49,707 INFO Using busy-loop synchronous mode on channel layer
+2016-10-15 09:05:17,332 WARNING Not Found: /channel_app/users/undefined/message/
+2016-10-15 09:09:08,230 INFO Using busy-loop synchronous mode on channel layer
