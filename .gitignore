@@ -5,7 +5,7 @@ drf_channels_example/db.sqlite3
 *.pyc
 drf_channels_example/venv
 drf_channels_example/.idea/
-
+.idea/
 
 
 
